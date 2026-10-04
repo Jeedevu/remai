@@ -1,0 +1,44 @@
+package com.example.data.local
+
+import android.content.Context
+import androidx.room.Database
+import androidx.room.Room
+import androidx.room.RoomDatabase
+import com.example.data.local.dao.ChatDao
+import com.example.data.local.dao.MemoryDao
+import com.example.data.local.dao.TaskDao
+import com.example.data.local.entity.ChatMessageEntity
+import com.example.data.local.entity.MemoryEntity
+import com.example.data.local.entity.TaskEntity
+
+@Database(
+    entities = [
+        MemoryEntity::class,
+        TaskEntity::class,
+        ChatMessageEntity::class
+    ],
+    version = 1,
+    exportSchema = false
+)
+abstract class RemDatabase : RoomDatabase() {
+    abstract fun memoryDao(): MemoryDao
+    abstract fun taskDao(): TaskDao
+    abstract fun chatDao(): ChatDao
+
+    companion object {
+        @Volatile
+        private var INSTANCE: RemDatabase? = null
+
+        fun getInstance(context: Context): RemDatabase {
+            return INSTANCE ?: synchronized(this) {
+                val instance = Room.databaseBuilder(
+                    context.applicationContext,
+                    RemDatabase::class.java,
+                    "rem_memory_vault.db"
+                ).fallbackToDestructiveMigration().build()
+                INSTANCE = instance
+                instance
+            }
+        }
+    }
+}

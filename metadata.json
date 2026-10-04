@@ -1,0 +1,6 @@
+{
+  "name": "REM",
+  "description": "Neo-brutalist AI student memory & task assistant that captures screenshots, syllabi, and notes to auto-extract deadlines and reminders.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

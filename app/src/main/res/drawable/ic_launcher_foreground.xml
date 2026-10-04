@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Mascot Outer Neo-Brutalist Frame -->
+    <path
+        android:fillColor="#1C1B1B"
+        android:pathData="M28,26h52a12,12 0 0,1 12,12v44a12,12 0 0,1 -12,12h-52a12,12 0 0,1 -12,-12v-44a12,12 0 0,1 12,-12z" />
+    
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M30,28h48a10,10 0 0,1 10,10v40a10,10 0 0,1 -10,10h-48a10,10 0 0,1 -10,-10v-40a10,10 0 0,1 10,-10z" />
+
+    <!-- Antenna stem -->
+    <path
+        android:fillColor="#1C1B1B"
+        android:pathData="M52,20h4v10h-4z" />
+    <!-- Antenna ball -->
+    <path
+        android:fillColor="#FE6A34"
+        android:pathData="M54,16a5,5 0 1,0 0.01,0z" />
+    <path
+        android:strokeColor="#1C1B1B"
+        android:strokeWidth="1.5"
+        android:fillColor="#00000000"
+        android:pathData="M54,16a5,5 0 1,0 0.01,0z" />
+
+    <!-- Cute Mascot Robot Head -->
+    <path
+        android:fillColor="#FFC700"
+        android:pathData="M38,42h32a10,10 0 0,1 10,10v16a10,10 0 0,1 -10,10h-32a10,10 0 0,1 -10,-10v-16a10,10 0 0,1 10,-10z" />
+    <path
+        android:strokeColor="#1C1B1B"
+        android:strokeWidth="2.5"
+        android:fillColor="#00000000"
+        android:pathData="M38,42h32a10,10 0 0,1 10,10v16a10,10 0 0,1 -10,10h-32a10,10 0 0,1 -10,-10v-16a10,10 0 0,1 10,-10z" />
+
+    <!-- Ears / Side Knobs -->
+    <path
+        android:fillColor="#1C1B1B"
+        android:pathData="M25,52h4v8h-4z M79,52h4v8h-4z" />
+
+    <!-- Big Eyes -->
+    <path
+        android:fillColor="#1C1B1B"
+        android:pathData="M44,55a4,5 0 1,0 0.01,0z M64,55a4,5 0 1,0 0.01,0z" />
+    <!-- Catchlights in eyes -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M43,53a1.5,1.5 0 1,0 0.01,0z M63,53a1.5,1.5 0 1,0 0.01,0z" />
+
+    <!-- Cute Smile -->
+    <path
+        android:strokeColor="#1C1B1B"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M50,65 Q54,69 58,65" />
+
+    <!-- Rosy Cheek Dots -->
+    <path
+        android:fillColor="#FE6A34"
+        android:pathData="M37,60a2.5,2 0 1,0 0.01,0z M71,60a2.5,2 0 1,0 0.01,0z" />
+
+</vector>
